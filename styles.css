@@ -51,6 +51,7 @@ body {
   border-bottom:1px solid black;
 }
 
+/* using the !important rule will override all preivious styling rules (this is for when you click on the link and it stays black and bold */
 .active-nav-link a {
   color: black !important;
 }
@@ -73,7 +74,8 @@ body {
   height: 10%;
   width: 10%;
   position: center;
-  border-radius: 20%
+  box-shadow: 0 30px 40px white;
+  border-radius: 10%
 }
 
 .greeting {
@@ -117,6 +119,7 @@ body {
 
 .profile-image-wrapper img {
   width: 100%
+  
 }
 
 .profile-content-wrapper {
@@ -197,5 +200,46 @@ body {
   text-align: center;
 }
 
+/* Media Queries !  PLEASE CHECK ALL OF THESE. AS OF CURRENT THE NAV BAR DISAPPEARS WHEN THE SCREEN BECOMES SMALLER */
+
+/* for large devices (large desktops, 1440px and up */
+@media (max-width: 1440px) {
+.container {
+  display: flex;
+  justify-content: flex-end;
+}
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (max-width: 1200px) {
+  .container {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (max-width: 992px) {
+  .container {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (max-width: 768px) {
+  .container {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) { 
+  .container {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
 
 
