@@ -74,7 +74,6 @@ body {
   width: 10%;
   position: center;
   border-radius: 20%
-
 }
 
 .greeting {
@@ -114,7 +113,6 @@ body {
 .two-column-wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
-
 }
 
 .profile-image-wrapper img {
@@ -123,14 +121,13 @@ body {
 
 .profile-content-wrapper {
   padding: 30px
-
 }
 
 .profile-content-wrapper h1 {
   color: darkcyan;
-
 }
-/* to also ad a project section in the About webpage */
+/* to also add a project section in the About webpage */
+/* This section will have somekind of cool, fancy scroll option and will only show hypothetical projects because I haven't don many yet */
 
 
 /* Contact form styles */
