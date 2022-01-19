@@ -8,6 +8,8 @@ body {
 .container {
   display: grid;
   text-align: center;
+  max-width: 100em;
+  min-height: 15px;
 }
 
 /* Nav Styles */
@@ -111,6 +113,7 @@ body {
   opacity: 50;
 }
 
+
 /* About Page styles  */
 .two-column-wrapper {
   display: grid;
@@ -118,6 +121,7 @@ body {
 }
 
 .profile-image-wrapper img {
+  padding-left: 1em;
   width: 100%
   
 }
@@ -129,6 +133,11 @@ body {
 .profile-content-wrapper h1 {
   color: darkcyan;
 }
+
+.project-content-wrapper h1 {
+  color: darkcyan;
+}
+
 /* to also add a project section in the About webpage */
 /* This section will have somekind of cool, fancy scroll option and will only show hypothetical projects because I haven't don many yet */
 
@@ -202,44 +211,10 @@ body {
 
 /* Media Queries !  PLEASE CHECK ALL OF THESE. AS OF CURRENT THE NAV BAR DISAPPEARS WHEN THE SCREEN BECOMES SMALLER */
 
-/* for large devices (large desktops, 1440px and up */
-@media (max-width: 1440px) {
-.container {
-  display: flex;
-  justify-content: flex-end;
-}
-}
-
-/* Extra large devices (large desktops, 1200px and up) */
-@media (max-width: 1200px) {
-  .container {
-    display: flex;
-    justify-content: flex-end;
+@media (max-width=600px) {
+   .container {
+     display: block;
+   }
   }
-}
-
-/* Large devices (desktops, 992px and up) */
-@media (max-width: 992px) {
-  .container {
-    display: flex;
-    justify-content: flex-end;
-  }
-}
-
-/* Medium devices (tablets, 768px and up)*/
-@media (max-width: 768px) {
-  .container {
-    display: flex;
-    justify-content: flex-end;
-  }
-}
-
-/* Small devices (landscape phones, 576px and up) */
-@media (max-width: 576px) { 
-  .container {
-    display: flex;
-    justify-content: flex-end;
-  }
-}
 
 
