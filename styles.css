@@ -14,10 +14,9 @@ img {
 .container {
   display: grid;
   text-align: center;
-  max-width: 100em;
-  min-height: 15px;
+  max-width: 100%;
+  min-height: 100%;
 }
-
 
 /* Navigation Styles */
 .nav-wrapper {
@@ -112,19 +111,18 @@ img {
 }
 
 /* About Page styles  */
-.two-column-wrapper {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  grid-gap: 1em;
-  grid-auto-rows: minman(100px, auto);
+.about-page-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 /* a little bit about me... */
 .profile-image-wrapper img {
-  position: relative; 
-  top: 40px;
-  /* padding: 1em; */
-  width: 100%
+  /* position: relative; */
+  top: 50px;
+  width: 400px;
+  border-radius: 50%;
 }
 
 .profile-content-wrapper {
@@ -137,11 +135,12 @@ img {
 }
 
 /* my projects to come... */
-.project-image-wrapper {
-  position: relative; 
-  top: 40px;
-  /* padding: 1em; */
-  width: 100%
+.project-image-wrapper img {
+  /* position: relative; */
+  display: block 
+  top: 30px;
+  width: 400px;
+  border-radius: 50%;
 }
 
 .project-content-wrapper h1 {
@@ -149,15 +148,13 @@ img {
   font-weight: 300;
 }
 
-.project-content-wrapper { 
-  /* padding: 30px */
+/* style for list of projects - HELP CLARIFY HOW TO ACTUALLY SHOW THIS LIST */
+.project-list {
+  list-style-type:lower-alpha;
+  font-weight: 600;
 }
 
-
-
 /* to also add a project section in the About webpage */
-/* This section will have somekind of cool, fancy scroll option and will only show hypothetical projects because I haven't don many yet */
-
 
 /* Contact form styles */
 /* look at ways you can blur the edges of background images to website background */
@@ -172,7 +169,7 @@ header {
 
 form {
   margin: 50px auto;
-  width: 100%;
+  width: 60%;
 }
 
 .form-item {
@@ -221,8 +218,12 @@ form {
 /* footer style */
 
 .footer {
+  /* need to make footer to stay at the bottom of the screen on the Contact page */
+  position: relative;
+  margin-bottom: 0;
   color: rgb(11, 80, 80);
   font-family: "Padauk", sans-serif;
+  font-weight: 500;
   text-align: center;
   }
 
