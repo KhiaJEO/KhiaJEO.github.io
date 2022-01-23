@@ -119,7 +119,6 @@ img {
 
 /* a little bit about me... */
 .profile-image-wrapper img {
-  /* position: relative; */
   top: 50px;
   width: 400px;
   border-radius: 50%;
@@ -136,11 +135,14 @@ img {
 
 /* my projects to come... */
 .project-image-wrapper img {
-  /* position: relative; */
-  display: block 
+  /* position: relative; */ 
   top: 30px;
   width: 400px;
   border-radius: 50%;
+}
+
+.project-content-wrapper {
+  padding: 30px;
 }
 
 .project-content-wrapper h1 {
@@ -149,9 +151,12 @@ img {
 }
 
 /* style for list of projects - HELP CLARIFY HOW TO ACTUALLY SHOW THIS LIST */
-.project-list {
-  list-style-type:lower-alpha;
-  font-weight: 600;
+.project-list-container {
+  color: darkslategrey;
+  font-weight: 650;
+  line-height: 60px;
+  list-style-type: none;
+  /* not sure how to get rid of bullet point style */
 }
 
 /* to also add a project section in the About webpage */
@@ -221,18 +226,146 @@ form {
   /* need to make footer to stay at the bottom of the screen on the Contact page */
   position: relative;
   margin-bottom: 0;
-  color: rgb(11, 80, 80);
+  color: teal;
   font-family: "Padauk", sans-serif;
   font-weight: 500;
   text-align: center;
   }
 
-/* Media Queries !  PLEASE CHECK ALL OF THESE. AS OF CURRENT THE NAV BAR DISAPPEARS WHEN THE SCREEN BECOMES SMALLER */
+/* Media Queries !  */
+/* For these media queries - look at doing Desktop First. 
 
-@media (max-width=600px) {
-   .container {
-     display: block;
+/* Large Device */
+@media (max-width: 1024px) {
+  .greeting {
+    font-size: 17pt;
+   }
+
+   .img-text-wrapper .subtitle {
+     font-size: 35pt;
+   }
+   .img-text-wrapper:hover .subtitle {
+    font-size: 35pt;
    }
   }
+
+  /* Medium Device */
+@media (max-width: 760px) {
+  .greeting {
+    font-size: 15pt;
+  }
+
+  .img-text-wrapper.subtitle {
+    font-size: 30pt
+  }
+
+  .img-text-wrapper:hover .subtitle {
+    font-size: 30pt;
+   }
+
+   .profile-content-wrapper h1 {
+    font-size: 20pt;
+    color: steelblue;
+    font-weight: 300;
+  }
+
+  .project-content-wrapper h1 {
+    font-size: 20pt;
+    color: steelblue;
+    font-weight: 300;
+  }
+
+  .profile-image-wrapper img {
+    top: 50px;
+    width: 350px;
+    border-radius: 50%;
+  }
+
+  .project-image-wrapper img {
+    top: 30px;
+    width: 350px;
+    border-radius: 50%;
+  }
+
+  header {
+    font-size: 10pt;
+  }
+  
+  form {
+    margin: 50px auto;
+    width: 80%;
+  }
+
+}
+
+/* Small Device */
+@media (max-width: 640px)  {
+  .greeting {
+    font-size: 10pt;
+  }
+
+  .img-text-wrapper.subtitle {
+    font-size: 20pt
+  }
+
+  .img-text-wrapper:hover .subtitle {
+    font-size: 20pt;
+   }
+
+   .about-page-wrapper {
+    justify-content: center;
+    text-align: justify;
+    text-justify: inter-word;
+  }
+
+   .profile-content-wrapper h1 {
+    font-size: 15pt;
+    color: steelblue;
+    font-weight: 300;
+  }
+
+  .project-content-wrapper h1 {
+    font-size: 15pt;
+    color: steelblue;
+    font-weight: 300;
+  }
+
+  .profile-image-wrapper img {
+    top: 50px;
+    width: 200px;
+    border-radius: 50%;
+  }
+
+  .project-image-wrapper img {
+    top: 30px;
+    width: 200px;
+    border-radius: 50%;
+  }
+
+  .profile-content-wrapper {
+    font-size: 15px;
+  }
+
+  .project-content-wrapper {
+    font-size: 15px;
+  }
+
+  .project-list-container {
+    font-size: 15px;
+    justify-content: center;
+  }
+
+  header {
+    font-size: 7pt;
+  }
+  
+  form {
+    margin: 50px auto;
+    width: 80%;
+  }
+
+}
+
+
 
 
