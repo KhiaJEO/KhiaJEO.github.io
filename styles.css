@@ -2,6 +2,7 @@
 body {
   font-family: "Padauk", sans-serif;
   margin: 0px;
+  padding-bottom: 40px;
   min-height: 100%
 }
 
@@ -59,10 +60,11 @@ img {
   border-bottom:1px solid black;
 }
 
-/* using the !important rule will override all preivious styling rules (this is for when you click on the link and it stays black and bold */
+/* using the !important rule will override all previous styling rules (this is for when you click on the link and it stays black and bold */
 .active-nav-link a {
   color: black !important;
 }
+
 
 /* Home Page styles */
 .portfolio-items-wrapper {
@@ -117,7 +119,7 @@ img {
   flex-wrap: wrap;
 }
 
-/* a little bit about me... */
+/* profile */
 .profile-image-wrapper img {
   top: 50px;
   width: 400px;
@@ -133,9 +135,8 @@ img {
   font-weight: 300;
 }
 
-/* my projects to come... */
+/* my projects */
 .project-image-wrapper img {
-  /* position: relative; */ 
   top: 30px;
   width: 400px;
   border-radius: 50%;
@@ -150,19 +151,7 @@ img {
   font-weight: 300;
 }
 
-/* style for list of projects - HELP CLARIFY HOW TO ACTUALLY SHOW THIS LIST */
-.project-list-container {
-  color: darkslategrey;
-  font-weight: 650;
-  line-height: 60px;
-  list-style-type: none;
-  /* not sure how to get rid of bullet point style */
-}
-
-/* to also add a project section in the About webpage */
-
 /* Contact form styles */
-/* look at ways you can blur the edges of background images to website background */
 .contact-image-wrapper {
   opacity: 60%;
   box-shadow: 0 0 8px white inset;
@@ -224,16 +213,19 @@ form {
 
 .footer {
   /* need to make footer to stay at the bottom of the screen on the Contact page */
-  position: relative;
-  margin-bottom: 0;
-  color: teal;
-  font-family: "Padauk", sans-serif;
-  font-weight: 500;
-  text-align: center;
+  bottom: 0;
   }
 
+.footer-bottom {
+  color: teal;
+  bottom: 0;
+  font-weight: 500;
+  text-align: center;
+}
+/* trouble locking footer at the bottom of page see CONTACT page. */
+
 /* Media Queries !  */
-/* For these media queries - look at doing Desktop First. 
+/* For these media queries - look at doing Desktop First.  */
 
 /* Large Device */
 @media (max-width: 1024px) {
@@ -295,7 +287,6 @@ form {
     margin: 50px auto;
     width: 80%;
   }
-
 }
 
 /* Small Device */
@@ -346,13 +337,29 @@ form {
     font-size: 15px;
   }
 
+  .a-little-bit-about-me {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .profile-content-list {
+    justify-content: center;
+    text-align: center;
+  }
+
   .project-content-wrapper {
     font-size: 15px;
   }
 
-  .project-list-container {
-    font-size: 15px;
+  .my-projects-to-come {
     justify-content: center;
+    text-align:center;
+  }
+
+  .project-content-list {
+    justify-content: center;
+    text-align:center;
+    font-size: 15px;
   }
 
   header {
@@ -363,8 +370,9 @@ form {
     margin: 50px auto;
     width: 80%;
   }
-
 }
+
+/* next time consider mobile first? */
 
 
 
