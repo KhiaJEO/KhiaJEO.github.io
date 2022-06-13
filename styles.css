@@ -3,8 +3,16 @@ body {
   font-family: "Padauk", sans-serif;
   margin: 0px;
   padding-bottom: 40px;
-  min-height: 100%
+  min-height: 100%;
 }
+
+/* .main {
+  height: 700px;
+  background-image: url(C:\Users\khia.emslie_winyama\Desktop\shecodes\she-codes-html-website-project\images\cactus.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+} */
 
 img {
   display: block;
@@ -23,7 +31,7 @@ img {
 .nav-wrapper {
   display: flex;
   justify-content: space-between;
-  padding: 36px
+  padding: 36px;
 }
 
 .left-side {
@@ -57,7 +65,7 @@ img {
 }
 
 .active-nav-link {
-  border-bottom:1px solid black;
+  border-bottom: 1px solid black;
 }
 
 /* using the !important rule will override all previous styling rules (this is for when you click on the link and it stays black and bold */
@@ -65,19 +73,23 @@ img {
   color: black !important;
 }
 
-
 /* Home Page styles */
-.portfolio-items-wrapper {
+/* .portfolio-items-wrapper {
   display: grid;
-  grid-template-columns: 1fr;  
+  grid-template-columns: 1fr;
+} */
+
+.portfolio-items-wrapper {
+  display: flex;
+  justify-content: center;
 }
 
-.portfolio-item-wrapper {
+/* .portfolio-item-wrapper {
   display: block;
   position: relative;
   margin: 0 auto;
-  text-align: center
-}
+  text-align: center;
+} */
 
 .greeting {
   font-size: 20pt;
@@ -86,11 +98,19 @@ img {
   padding: 4%;
 }
 
+/* .greeting-image {
+  display: flex;
+  justify-content: center;
+  height: 70px;
+  width: 50px;
+} */
+
 .img-text-wrapper .subtitle {
   transition: 1s;
-  font-weight: 600;
-  color: transparent;
-  font-size: 40pt;
+  font-weight: 200;
+  color: lightsalmon;
+  opacity: 20;
+  font-size: 30pt;
   position: center;
   padding: 5%;
 }
@@ -99,13 +119,13 @@ img {
   font-weight: 200;
   color: steelblue;
   text-shadow: 10px 3px 15px white;
-  font-size: 40pt;
+  font-size: 30pt;
   position: center;
 }
 
 .portfolio-item-wrapper .subtitle {
-  opacity: 100;
-  transition: opacity .3 ease;
+  opacity: 50;
+  transition: opacity 0.3 ease;
 }
 
 .portfolio-item-wrapper:hover .subtitle {
@@ -127,7 +147,7 @@ img {
 }
 
 .profile-content-wrapper {
-  padding: 30px
+  padding: 30px;
 }
 
 .profile-content-wrapper h1 {
@@ -214,7 +234,7 @@ form {
 .footer {
   /* need to make footer to stay at the bottom of the screen on the Contact page */
   bottom: 0;
-  }
+}
 
 .footer-bottom {
   color: teal;
@@ -231,31 +251,31 @@ form {
 @media (max-width: 1024px) {
   .greeting {
     font-size: 17pt;
-   }
-
-   .img-text-wrapper .subtitle {
-     font-size: 35pt;
-   }
-   .img-text-wrapper:hover .subtitle {
-    font-size: 35pt;
-   }
   }
 
-  /* Medium Device */
+  .img-text-wrapper .subtitle {
+    font-size: 35pt;
+  }
+  .img-text-wrapper:hover .subtitle {
+    font-size: 35pt;
+  }
+}
+
+/* Medium Device */
 @media (max-width: 760px) {
   .greeting {
     font-size: 15pt;
   }
 
   .img-text-wrapper.subtitle {
-    font-size: 30pt
+    font-size: 30pt;
   }
 
   .img-text-wrapper:hover .subtitle {
     font-size: 30pt;
-   }
+  }
 
-   .profile-content-wrapper h1 {
+  .profile-content-wrapper h1 {
     font-size: 20pt;
     color: steelblue;
     font-weight: 300;
@@ -282,7 +302,7 @@ form {
   header {
     font-size: 10pt;
   }
-  
+
   form {
     margin: 50px auto;
     width: 80%;
@@ -290,26 +310,26 @@ form {
 }
 
 /* Small Device */
-@media (max-width: 640px)  {
+@media (max-width: 640px) {
   .greeting {
     font-size: 10pt;
   }
 
   .img-text-wrapper.subtitle {
-    font-size: 20pt
+    font-size: 20pt;
   }
 
   .img-text-wrapper:hover .subtitle {
     font-size: 20pt;
-   }
+  }
 
-   .about-page-wrapper {
+  .about-page-wrapper {
     justify-content: center;
     text-align: justify;
     text-justify: inter-word;
   }
 
-   .profile-content-wrapper h1 {
+  .profile-content-wrapper h1 {
     font-size: 15pt;
     color: steelblue;
     font-weight: 300;
@@ -353,19 +373,19 @@ form {
 
   .my-projects-to-come {
     justify-content: center;
-    text-align:center;
+    text-align: center;
   }
 
   .project-content-list {
     justify-content: center;
-    text-align:center;
+    text-align: center;
     font-size: 15px;
   }
 
   header {
     font-size: 7pt;
   }
-  
+
   form {
     margin: 50px auto;
     width: 80%;
@@ -373,7 +393,3 @@ form {
 }
 
 /* next time consider mobile first? */
-
-
-
-
