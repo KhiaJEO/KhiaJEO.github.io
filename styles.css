@@ -3,19 +3,44 @@ body {
   font-family: "Padauk", sans-serif;
   margin: 0px;
   padding-bottom: 40px;
-  min-height: 100%;
+  height: 100vh;
+}
+
+body background {
+  height: 100vh;
+  width: 200px;
 }
 
 /* .main {
-  height: 700px;
-  background-image: url(C:\Users\khia.emslie_winyama\Desktop\shecodes\she-codes-html-website-project\images\cactus.jpg);
-  background-position: center center;
-  background-repeat: no-repeat;
+    background-image: url(C:\Users\khia.emslie_winyama\Desktop\shecodes\she-codes-html-website-project\images\cactus.jpg);
   background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  margin: 0px;
+  padding: 0px;
+} */
+
+/* .background-image {
+  background-image: url(C:\Users\khia.emslie_winyama\Desktop\shecodes\she-codes-html-website-project\images\cactus.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  margin: 0px;
+  padding: 0px;
+}
+
+.background-image img {
+  background-image: url(C:\Users\khia.emslie_winyama\Desktop\shecodes\she-codes-html-website-project\images\cactus.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  margin: 0px;
+  padding: 0px;
 } */
 
 img {
   display: block;
+
   width: 100%;
   height: auto;
 }
@@ -132,6 +157,45 @@ img {
   opacity: 50;
 }
 
+/* About page in Dev branch */
+section {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.card {
+  width: 350px;
+  text-align: center;
+  margin: 5px;
+  border-radius: 15%;
+}
+
+.img-holder {
+  width: 98%;
+  height: 14vw;
+  object-fit: cover;
+  border-radius: 10%;
+}
+
+.img-holder img {
+  width: 98%;
+  height: 12vw;
+  object-fit: cover;
+  border-radius: 10%;
+  padding: 10px;
+}
+
+.project-name {
+  text-transform: uppercase;
+}
+
+.tech-stack {
+  font-weight: lighter;
+}
+
 /* About Page styles  */
 .about-page-wrapper {
   display: flex;
@@ -147,16 +211,44 @@ img {
 }
 
 .profile-content-wrapper {
+  margin-left: 50px;
+  margin-right: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.profile-content-text {
+  margin-left: 50px;
+  margin-right: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.map-image {
+  display: grid 1fr 1fr 1fr;
+  /* justify-content: center;
+  align-items: center; */
+  /* flex-direction: column; */
   padding: 30px;
+  margin: 30px;
+  height: 300px;
+  width: 500px;
 }
 
 .profile-content-wrapper h1 {
   color: steelblue;
   font-weight: 300;
+  padding: 30px;
+}
+
+.external-links {
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
 }
 
 /* my projects */
-.project-image-wrapper img {
+/* .project-image-wrapper img {
   top: 30px;
   width: 400px;
   border-radius: 50%;
@@ -169,7 +261,7 @@ img {
 .project-content-wrapper h1 {
   color: steelblue;
   font-weight: 300;
-}
+} */
 
 /* Contact form styles */
 .contact-image-wrapper {
