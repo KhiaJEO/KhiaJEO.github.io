@@ -4,11 +4,8 @@ body {
   margin: 0px;
   padding-bottom: 40px;
   height: 100vh;
-}
-
-body background {
-  height: 100vh;
-  width: 200px;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /* .main {
@@ -76,26 +73,30 @@ img {
 }
 
 .nav-link-wrapper a {
-  color: #8a8a8a;
+  color: white;
   text-decoration: none;
   transition: color 0.5s;
 }
 
 .nav-link-wrapper:hover {
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid orange;
 }
 
 .nav-link-wrapper a:hover {
-  color: black;
+  color: silver;
 }
 
 .active-nav-link {
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid silver;
 }
 
 /* using the !important rule will override all previous styling rules (this is for when you click on the link and it stays black and bold */
 .active-nav-link a {
-  color: black !important;
+  color: silver !important;
+}
+
+.right-side {
+  color: lightsalmon;
 }
 
 /* Home Page styles */
@@ -117,9 +118,9 @@ img {
 } */
 
 .greeting {
-  font-size: 20pt;
-  font-weight: 600;
-  color: black;
+  font-size: 50pt;
+  font-family: "Open Sans", sans-serif;
+  color: gainsboro;
   padding: 4%;
 }
 
@@ -130,21 +131,30 @@ img {
   width: 50px;
 } */
 
+.img-text-wrapper {
+  margin-left: 50px;
+  margin-right: 50px;
+  padding-left: 70px;
+  padding-right: 70px;
+}
+
 .img-text-wrapper .subtitle {
   transition: 1s;
   font-weight: 200;
-  color: lightsalmon;
+  color: gainsboro;
   opacity: 20;
-  font-size: 30pt;
+  font-size: 20pt;
   position: center;
-  padding: 5%;
+  padding-left: 50px;
+  padding-right: 50px;
+  font-family: "Work Sans", sans-serif;
 }
 
 .img-text-wrapper:hover .subtitle {
   font-weight: 200;
-  color: steelblue;
+  color: white;
   text-shadow: 10px 3px 15px white;
-  font-size: 30pt;
+  font-size: 20pt;
   position: center;
 }
 
@@ -188,12 +198,45 @@ section {
   padding: 10px;
 }
 
-.project-name {
+.external-links a:link {
   text-transform: uppercase;
+  color: white;
+  text-decoration: none;
+}
+
+.external-links a:visited {
+  color: gainsboro;
+  text-decoration: none;
+}
+
+.external-links a:hover {
+  color: white;
+  text-decoration: none;
+  border-bottom: 2px solid white;
+  transition: border-bottom 0.5s;
+}
+
+.project-name a:link {
+  text-transform: uppercase;
+  color: white;
+  text-decoration: none;
+}
+
+.project-name a:visited {
+  color: gainsboro;
+  text-decoration: none;
+}
+
+.project-name a:hover {
+  color: white;
+  text-decoration: none;
+  border-bottom: 2px solid white;
+  transition: border-bottom 0.5s;
 }
 
 .tech-stack {
   font-weight: lighter;
+  color: gainsboro;
 }
 
 /* About Page styles  */
@@ -215,6 +258,7 @@ section {
   margin-right: 50px;
   padding-left: 50px;
   padding-right: 50px;
+  color: white;
 }
 
 .profile-content-text {
@@ -222,6 +266,7 @@ section {
   margin-right: 50px;
   padding-left: 50px;
   padding-right: 50px;
+  backdrop-filter: blur (1.5);
 }
 
 .map-image {
@@ -236,15 +281,17 @@ section {
 }
 
 .profile-content-wrapper h1 {
-  color: steelblue;
+  color: white;
+  text-transform: uppercase;
   font-weight: 300;
-  padding: 30px;
+  padding: 5px;
 }
 
 .external-links {
   display: flex;
   justify-content: center;
-  padding-top: 50px;
+  padding-top: 5px;
+  color: salmon;
 }
 
 /* my projects */
@@ -282,7 +329,7 @@ form {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  padding: 5px;
+  padding-top: 20px;
 }
 
 .form-item label {
@@ -294,26 +341,35 @@ form {
 .form-item input,
 .form-item textarea {
   flex-basis: 70%;
-  border: 1px solid lightsteelblue;
+  border: none;
+  border-bottom: 1px solid white;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 18px;
+  padding: 5px;
 }
 
 .form-item input:hover,
 .form-item textarea:hover {
-  border: 2px solid steelblue;
+  border: none;
+  border-bottom: 1px solid lightsteelblue;
+  background: none;
+  font-family: "Courier New", Courier, monospace;
+  transition: 0.5s all ease-in-out;
 }
 
-.form-item input,
-.form-item textarea,
 .form-item button {
-  border: px solid lightsteelblue;
-  padding: 5px;
-  font-size: 18px;
+  background: none;
+  border: solid 1px lightblue;
+  color: white;
 }
 
 .form-item button:hover {
   border: 1px solid steelblue;
   color: steelblue;
   font-weight: 300;
+  transition: 0.5s all ease-in-out;
 }
 
 .form-item button {
@@ -326,10 +382,11 @@ form {
 .footer {
   /* need to make footer to stay at the bottom of the screen on the Contact page */
   bottom: 0;
+  /* position: fixed; */
 }
 
 .footer-bottom {
-  color: teal;
+  color: snow;
   bottom: 0;
   font-weight: 500;
   text-align: center;
