@@ -8,36 +8,8 @@ body {
   background-size: cover;
 }
 
-/* .main {
-    background-image: url(C:\Users\khia.emslie_winyama\Desktop\shecodes\she-codes-html-website-project\images\cactus.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 100vh;
-  margin: 0px;
-  padding: 0px;
-} */
-
-/* .background-image {
-  background-image: url(C:\Users\khia.emslie_winyama\Desktop\shecodes\she-codes-html-website-project\images\cactus.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 100vh;
-  margin: 0px;
-  padding: 0px;
-}
-
-.background-image img {
-  background-image: url(C:\Users\khia.emslie_winyama\Desktop\shecodes\she-codes-html-website-project\images\cactus.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 100vh;
-  margin: 0px;
-  padding: 0px;
-} */
-
 img {
   display: block;
-
   width: 100%;
   height: auto;
 }
@@ -266,7 +238,7 @@ section {
   margin-right: 50px;
   padding-left: 50px;
   padding-right: 50px;
-  backdrop-filter: blur (1.5);
+  font-family: "Open Sans", sans-serif;
 }
 
 .map-image {
@@ -293,22 +265,6 @@ section {
   padding-top: 5px;
   color: salmon;
 }
-
-/* my projects */
-/* .project-image-wrapper img {
-  top: 30px;
-  width: 400px;
-  border-radius: 50%;
-}
-
-.project-content-wrapper {
-  padding: 30px;
-}
-
-.project-content-wrapper h1 {
-  color: steelblue;
-  font-weight: 300;
-} */
 
 /* Contact form styles */
 .contact-image-wrapper {
@@ -363,18 +319,44 @@ form {
   background: none;
   border: solid 1px lightblue;
   color: white;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
 .form-item button:hover {
-  border: 1px solid steelblue;
-  color: steelblue;
+  border: 1px solid lightblue;
+  color: white;
   font-weight: 300;
+  font-weight: bold;
   transition: 0.5s all ease-in-out;
+  cursor: pointer;
 }
 
 .form-item button {
   width: 100px;
   height: 40px;
+}
+
+.linkedin-link {
+  padding: 20px;
+}
+
+.linkedin-link a:link {
+  text-transform: uppercase;
+  color: white;
+  text-decoration: none;
+}
+
+.linkedin-link a:visited {
+  color: gainsboro;
+  text-decoration: none;
+}
+
+.linkedin-link a:hover {
+  color: white;
+  text-decoration: none;
+  border-bottom: 2px solid white;
+  transition: border-bottom 0.5s;
 }
 
 /* footer style */
