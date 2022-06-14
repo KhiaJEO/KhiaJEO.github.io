@@ -3,19 +3,41 @@ body {
   font-family: "Padauk", sans-serif;
   margin: 0px;
   padding-bottom: 40px;
-  min-height: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /* .main {
-  height: 700px;
-  background-image: url(C:\Users\khia.emslie_winyama\Desktop\shecodes\she-codes-html-website-project\images\cactus.jpg);
-  background-position: center center;
-  background-repeat: no-repeat;
+    background-image: url(C:\Users\khia.emslie_winyama\Desktop\shecodes\she-codes-html-website-project\images\cactus.jpg);
   background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  margin: 0px;
+  padding: 0px;
+} */
+
+/* .background-image {
+  background-image: url(C:\Users\khia.emslie_winyama\Desktop\shecodes\she-codes-html-website-project\images\cactus.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  margin: 0px;
+  padding: 0px;
+}
+
+.background-image img {
+  background-image: url(C:\Users\khia.emslie_winyama\Desktop\shecodes\she-codes-html-website-project\images\cactus.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  margin: 0px;
+  padding: 0px;
 } */
 
 img {
   display: block;
+
   width: 100%;
   height: auto;
 }
@@ -51,26 +73,30 @@ img {
 }
 
 .nav-link-wrapper a {
-  color: #8a8a8a;
+  color: white;
   text-decoration: none;
   transition: color 0.5s;
 }
 
 .nav-link-wrapper:hover {
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid orange;
 }
 
 .nav-link-wrapper a:hover {
-  color: black;
+  color: silver;
 }
 
 .active-nav-link {
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid silver;
 }
 
 /* using the !important rule will override all previous styling rules (this is for when you click on the link and it stays black and bold */
 .active-nav-link a {
-  color: black !important;
+  color: silver !important;
+}
+
+.right-side {
+  color: lightsalmon;
 }
 
 /* Home Page styles */
@@ -92,9 +118,9 @@ img {
 } */
 
 .greeting {
-  font-size: 20pt;
-  font-weight: 600;
-  color: black;
+  font-size: 50pt;
+  font-family: "Open Sans", sans-serif;
+  color: gainsboro;
   padding: 4%;
 }
 
@@ -105,21 +131,30 @@ img {
   width: 50px;
 } */
 
+.img-text-wrapper {
+  margin-left: 50px;
+  margin-right: 50px;
+  padding-left: 70px;
+  padding-right: 70px;
+}
+
 .img-text-wrapper .subtitle {
   transition: 1s;
   font-weight: 200;
-  color: lightsalmon;
+  color: gainsboro;
   opacity: 20;
-  font-size: 30pt;
+  font-size: 20pt;
   position: center;
-  padding: 5%;
+  padding-left: 50px;
+  padding-right: 50px;
+  font-family: "Work Sans", sans-serif;
 }
 
 .img-text-wrapper:hover .subtitle {
   font-weight: 200;
-  color: steelblue;
+  color: white;
   text-shadow: 10px 3px 15px white;
-  font-size: 30pt;
+  font-size: 20pt;
   position: center;
 }
 
@@ -130,6 +165,78 @@ img {
 
 .portfolio-item-wrapper:hover .subtitle {
   opacity: 50;
+}
+
+/* About page in Dev branch */
+section {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.card {
+  width: 350px;
+  text-align: center;
+  margin: 5px;
+  border-radius: 15%;
+}
+
+.img-holder {
+  width: 98%;
+  height: 14vw;
+  object-fit: cover;
+  border-radius: 10%;
+}
+
+.img-holder img {
+  width: 98%;
+  height: 12vw;
+  object-fit: cover;
+  border-radius: 10%;
+  padding: 10px;
+}
+
+.external-links a:link {
+  text-transform: uppercase;
+  color: white;
+  text-decoration: none;
+}
+
+.external-links a:visited {
+  color: gainsboro;
+  text-decoration: none;
+}
+
+.external-links a:hover {
+  color: white;
+  text-decoration: none;
+  border-bottom: 2px solid white;
+  transition: border-bottom 0.5s;
+}
+
+.project-name a:link {
+  text-transform: uppercase;
+  color: white;
+  text-decoration: none;
+}
+
+.project-name a:visited {
+  color: gainsboro;
+  text-decoration: none;
+}
+
+.project-name a:hover {
+  color: white;
+  text-decoration: none;
+  border-bottom: 2px solid white;
+  transition: border-bottom 0.5s;
+}
+
+.tech-stack {
+  font-weight: lighter;
+  color: gainsboro;
 }
 
 /* About Page styles  */
@@ -147,16 +254,48 @@ img {
 }
 
 .profile-content-wrapper {
+  margin-left: 50px;
+  margin-right: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+  color: white;
+}
+
+.profile-content-text {
+  margin-left: 50px;
+  margin-right: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+  backdrop-filter: blur (1.5);
+}
+
+.map-image {
+  display: grid 1fr 1fr 1fr;
+  /* justify-content: center;
+  align-items: center; */
+  /* flex-direction: column; */
   padding: 30px;
+  margin: 30px;
+  height: 300px;
+  width: 500px;
 }
 
 .profile-content-wrapper h1 {
-  color: steelblue;
+  color: white;
+  text-transform: uppercase;
   font-weight: 300;
+  padding: 5px;
+}
+
+.external-links {
+  display: flex;
+  justify-content: center;
+  padding-top: 5px;
+  color: salmon;
 }
 
 /* my projects */
-.project-image-wrapper img {
+/* .project-image-wrapper img {
   top: 30px;
   width: 400px;
   border-radius: 50%;
@@ -169,7 +308,7 @@ img {
 .project-content-wrapper h1 {
   color: steelblue;
   font-weight: 300;
-}
+} */
 
 /* Contact form styles */
 .contact-image-wrapper {
@@ -190,7 +329,7 @@ form {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  padding: 5px;
+  padding-top: 20px;
 }
 
 .form-item label {
@@ -202,26 +341,35 @@ form {
 .form-item input,
 .form-item textarea {
   flex-basis: 70%;
-  border: 1px solid lightsteelblue;
+  border: none;
+  border-bottom: 1px solid white;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 18px;
+  padding: 5px;
 }
 
 .form-item input:hover,
 .form-item textarea:hover {
-  border: 2px solid steelblue;
+  border: none;
+  border-bottom: 1px solid lightsteelblue;
+  background: none;
+  font-family: "Courier New", Courier, monospace;
+  transition: 0.5s all ease-in-out;
 }
 
-.form-item input,
-.form-item textarea,
 .form-item button {
-  border: px solid lightsteelblue;
-  padding: 5px;
-  font-size: 18px;
+  background: none;
+  border: solid 1px lightblue;
+  color: white;
 }
 
 .form-item button:hover {
   border: 1px solid steelblue;
   color: steelblue;
   font-weight: 300;
+  transition: 0.5s all ease-in-out;
 }
 
 .form-item button {
@@ -234,10 +382,11 @@ form {
 .footer {
   /* need to make footer to stay at the bottom of the screen on the Contact page */
   bottom: 0;
+  /* position: fixed; */
 }
 
 .footer-bottom {
-  color: teal;
+  color: snow;
   bottom: 0;
   font-weight: 500;
   text-align: center;
